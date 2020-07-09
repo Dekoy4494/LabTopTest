@@ -103,7 +103,8 @@
     font-family: Proxima Nova Black;
     font-size: 48px;
     letter-spacing: 0.03em;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #233148; }
   .product-title-wrapper {
     padding-top: 380px; }
 
