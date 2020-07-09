@@ -1,0 +1,326 @@
+* {
+  box-sizing: border-box; }
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+/* ba-grid */
+.ba-row {
+  display: flex;
+  flex-wrap: wrap; }
+
+.ba-row + .ba-row {
+  margin-top: 1rem; }
+
+[class^='ba-col'] {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%; }
+
+.ba-col-1 {
+  width: 8.33333%; }
+
+.ba-col-2 {
+  width: 16.66667%; }
+
+.ba-col-3 {
+  width: 25%; }
+
+.ba-col-4 {
+  width: 33.33333%; }
+
+.ba-col-5 {
+  width: 41.66667%; }
+
+.ba-col-6 {
+  width: 50%; }
+
+.ba-col-7 {
+  width: 58.33333%; }
+
+.ba-col-8 {
+  width: 66.66667%; }
+
+.ba-col-9 {
+  width: 75%; }
+
+.ba-col-10 {
+  width: 83.33333%; }
+
+.ba-col-11 {
+  width: 91.66667%; }
+
+.ba-col-12 {
+  width: 100%; }
+
+/* Style.scss */
+.services {
+  background-color: #233148;
+  background-image: url(/LabTop-Digital-testing-work/icons/SymbolLogo.png);
+  background-position: center;
+  background-position-y: 80px;
+  background-repeat: no-repeat; }
+  .services-title {
+    margin: 29px 0 120px 0;
+    font-family: Proxima Nova Black;
+    font-size: 48px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: white; }
+  .services-title-wrapper {
+    padding-top: 132px; }
+  .services-wrapper {
+    display: flex;
+    padding: 0 20px 383px 98px;
+    justify-content: space-between; }
+  .services-item {
+    width: 45%; }
+    .services-item:nth-child(3) {
+      margin-top: 110px; }
+    .services-item:nth-child(4) {
+      margin-top: 110px; }
+    .services-item-title {
+      color: white;
+      font-family: Proxima Nova Bold;
+      font-size: 32px;
+      letter-spacing: 0.02em;
+      margin: 24px 0 54px 0; }
+    .services-item-text {
+      font-family: Proxima Nova Light;
+      font-size: 18px;
+      letter-spacing: 0.02em;
+      color: #8796ae; }
+    .services-item img {
+      width: 52px; }
+
+.product {
+  position: relative; }
+  .product-title {
+    margin: 29px 0 120px 0;
+    font-family: Proxima Nova Black;
+    font-size: 48px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase; }
+  .product-title-wrapper {
+    padding-top: 380px; }
+
+.document {
+  background-color: #1f65d9;
+  margin-right: 135px;
+  width: -webkit-fill-available;
+  position: absolute;
+  top: 1270px; }
+  .document .container {
+    display: flex;
+    position: relative;
+    background-image: url(/LabTop-Digital-testing-work/icons/SymbolDocs.png);
+    background-repeat: no-repeat;
+    background-position-y: 15px;
+    background-position-x: -130px;
+    background-size: auto; }
+  .document-title {
+    font-family: Proxima Nova XBold;
+    font-size: 32px;
+    color: white;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin: 72px 93px 178px 0; }
+  .document-image {
+    position: absolute;
+    right: 0px;
+    bottom: -150px;
+    z-index: 10; }
+  .document-text {
+    font-family: Proxima Nova Regular;
+    font-size: 24px;
+    color: white;
+    margin: auto 0;
+    letter-spacing: 0.03em; }
+  .document-btn {
+    position: absolute;
+    bottom: -40px;
+    left: 98px;
+    border: none;
+    padding: 29px 131px;
+    background: #fccf18;
+    text-transform: uppercase;
+    font-family: Proxima Nova Bold;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    color: #233148;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    z-index: 11; }
+    .document-btn:before {
+      content: "";
+      background-color: rgba(255, 255, 255, 0.5);
+      height: 100%;
+      width: 3em;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -4.5em;
+      transform: skewX(-45deg) translateX(0);
+      transition: none; }
+    .document-btn:hover {
+      background-color: #2194e0;
+      color: #fff;
+      border-bottom: 4px solid #1977b5; }
+      .document-btn:hover:before {
+        transform: skewX(-45deg) translateX(25.5em);
+        transition: all 0.5s ease-in-out; }
+
+@keyframes sheen {
+  0% {
+    transform: skewY(-45deg) translateX(0); }
+  100% {
+    transform: skewY(-45deg) translateX(12.5em); } }
+
+html, body {
+  overflow-x: hidden; }
+
+@media screen and (max-width: 1210px) {
+  .document-image {
+    width: 50%;
+    right: 0px;
+    bottom: -50px; }
+  .document {
+    margin-right: 0px; }
+    .document-title {
+      margin-right: 50px; }
+    .document-text {
+      margin-top: 155px; }
+    .document-btn {
+      position: absolute;
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%); } }
+
+@media screen and (max-width: 768px) {
+  .services {
+    background-color: #233148;
+    background-image: url(/icons/SymbolLogo.png);
+    background-position: center;
+    background-position-y: 80px;
+    background-repeat: no-repeat; }
+    .services .container {
+      max-width: 315px; }
+    .services-title {
+      margin: 24px 0 50px 0;
+      font-family: Proxima Nova Black;
+      font-size: 30px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: white; }
+    .services-title-wrapper {
+      padding-top: 90px; }
+    .services-wrapper {
+      display: flex;
+      padding: 0 0 0 0;
+      justify-content: space-between; }
+    .services-item {
+      width: 100%; }
+      .services-item:nth-child(3) {
+        margin-top: 0px; }
+      .services-item:nth-child(4) {
+        margin-top: 0px;
+        margin-bottom: 87px; }
+      .services-item-title {
+        color: white;
+        font-family: Proxima Nova Bold;
+        font-size: 22px;
+        letter-spacing: 0.02em;
+        margin: 17px 0 38px 0; }
+      .services-item-text {
+        font-family: Proxima Nova Light;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        color: #8796ae;
+        margin-bottom: 52px; }
+      .services-item img {
+        width: 37px; }
+  .document {
+    background-color: #1f65d9;
+    margin-right: 0px;
+    width: -webkit-fill-available;
+    position: relative;
+    top: 0px; }
+    .document .container {
+      max-width: 315px;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      background-image: url(/LabTop-Digital-testing-work/icons/SymbolDocs.png);
+      background-repeat: no-repeat;
+      background-position-y: 105px;
+      background-position-x: -130px;
+      background-size: auto; }
+    .document-title {
+      font-family: Proxima Nova XBold;
+      font-size: 22.4px;
+      color: white;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      margin: 197px 0px 0px 0; }
+    .document-image {
+      position: absolute;
+      right: -180px;
+      bottom: 100px;
+      z-index: 10;
+      width: 461px;
+      overflow: hidden; }
+    .document-text {
+      font-family: Proxima Nova Regular;
+      font-size: 16px;
+      color: white;
+      margin: 50px 0 89px 0; }
+    .document-btn {
+      position: absolute;
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      border: none;
+      padding: 22px 93px;
+      background: #fccf18;
+      text-transform: uppercase;
+      font-family: Proxima Nova Bold;
+      font-size: 22px;
+      letter-spacing: 0.02em;
+      color: #233148;
+      transition: all 0.2s ease-in-out;
+      overflow: hidden;
+      z-index: 11; }
+      .document-btn:before {
+        content: "";
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 100%;
+        width: 3em;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -4.5em;
+        transform: skewX(-45deg) translateX(0);
+        transition: none; }
+      .document-btn:hover {
+        background-color: #2194e0;
+        color: #fff;
+        border-bottom: 4px solid #1977b5; }
+        .document-btn:hover:before {
+          transform: skewX(-45deg) translateX(25.5em);
+          transition: all 0.5s ease-in-out; }
+  .product {
+    position: relative; }
+    .product .container {
+      max-width: 315px; }
+    .product-title {
+      color: #233148;
+      margin: 24px 0 90px 0;
+      font-family: Proxima Nova Black;
+      font-size: 30px;
+      letter-spacing: 0.01em;
+      text-transform: uppercase; }
+    .product-title-wrapper {
+      padding-top: 90px; } }
