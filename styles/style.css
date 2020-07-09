@@ -1,7 +1,7 @@
 /* Style.scss */
 .services {
   background-color: #233148;
-  background-image: url(/LabTop-Digital-testing-work/icons/SymbolLogo.png);
+  background-image: url(/LabTopTest/icons/SymbolLogo.png);
   background-position: center;
   background-position-y: 80px;
   background-repeat: no-repeat; }
@@ -58,7 +58,7 @@
   .document .container {
     display: flex;
     position: relative;
-    background-image: url(/LabTop-Digital-testing-work/icons/SymbolDocs.png);
+    background-image: url(/LabTopTest/icons/SymbolDocs.png);
     background-repeat: no-repeat;
     background-position-y: 15px;
     background-position-x: -130px;
@@ -144,7 +144,7 @@ html, body {
 @media screen and (max-width: 768px) {
   .services {
     background-color: #233148;
-    background-image: url(/icons/SymbolLogo.png);
+    background-image: url(/LabTopTest/icons/SymbolLogo.png);
     background-position: center;
     background-position-y: 80px;
     background-repeat: no-repeat; }
@@ -195,7 +195,7 @@ html, body {
       display: flex;
       position: relative;
       flex-direction: column;
-      background-image: url(/LabTop-Digital-testing-work/icons/SymbolDocs.png);
+      background-image: url(/LabTopTest/icons/SymbolDocs.png);
       background-repeat: no-repeat;
       background-position-y: 105px;
       background-position-x: -130px;
